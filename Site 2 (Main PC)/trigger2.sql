@@ -1,0 +1,39 @@
+SET SERVEROUTPUT ON;
+CREATE OR REPLACE TRIGGER trig 
+AFTER INSERT 
+ON test2
+DECLARE
+BEGIN
+	DBMS_OUTPUT.PUT_LINE('Value inserted on Test2 Database');
+	
+END;
+/
+
+
+CREATE OR REPLACE TRIGGER trig2 
+AFTER INSERT 
+ON odi2
+DECLARE
+BEGIN
+	DBMS_OUTPUT.PUT_LINE('Value inserted on Odi2 Database');
+END;
+/
+
+CREATE OR REPLACE TRIGGER trig3 
+AFTER INSERT 
+ON t20i2
+DECLARE
+BEGIN
+	DBMS_OUTPUT.PUT_LINE('Value inserted on T20i2 Database');
+END;
+/
+
+
+CREATE OR REPLACE TRIGGER trig4
+AFTER INSERT 
+ON continent2
+DECLARE
+BEGIN
+	DBMS_OUTPUT.PUT_LINE('Value inserted on continent2 Database');
+END;
+/
